@@ -246,11 +246,11 @@ class _ChatState extends State<Chat> {
                                                   .timestamp !=
                                               null &&
                                           DateTime.fromMillisecondsSinceEpoch(
-                                                message.timestamp! * 1000,
+                                                message.timestamp!,
                                               ).day !=
                                               DateTime
                                                   .fromMillisecondsSinceEpoch(
-                                                nextMessage.timestamp! * 1000,
+                                                nextMessage.timestamp!,
                                               ).day;
                                       nextMessageSameAuthor =
                                           nextMessage.authorId ==
@@ -286,7 +286,7 @@ class _ChatState extends State<Chat> {
                                               getVerboseDateTimeRepresentation(
                                                 DateTime
                                                     .fromMillisecondsSinceEpoch(
-                                                  message.timestamp! * 1000,
+                                                  message.timestamp!,
                                                 ),
                                                 widget.dateLocale,
                                                 widget.l10n.today,
