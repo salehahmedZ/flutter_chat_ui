@@ -69,7 +69,7 @@ class TextMessage extends StatelessWidget {
                 ? InheritedChatTheme.of(context).theme.primaryTextColor
                 : InheritedChatTheme.of(context).theme.secondaryTextColor,
           ),
-      textWidthBasis: TextWidthBasis.longestLine,
+      //textWidthBasis: TextWidthBasis.longestLine,
     );
   }
 
